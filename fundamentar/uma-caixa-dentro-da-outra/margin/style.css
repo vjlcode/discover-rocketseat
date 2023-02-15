@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+
+div,
+section {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  /* margin: 8px 0; 8px em cima e embaixo */
+  margin: 0px 8px; /*0px em cima e embaixo*/
+}
+
+div {
+  margin: 8px;
+}
