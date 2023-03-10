@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li::before {
+        /*antes do element*/
+        content: "<";
+      }
+
+      li::after {
+        /*depois do element*/
+        content: " => ";
+      }
+
+      li {
+        position: relative;
+      }
+
+      li::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: blue;
+        position: absolute;
+        bottom: 0px;
+      }
+
+      p::first-line {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste
+      facere cupiditate, sint perspiciatis voluptate. Nihil ipsum ut nam velit
+      corporis dolorum voluptate, cumque esse dicta maiores. Ex, commodi
+      quisquam?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste
+      facere cupiditate, sint perspiciatis voluptate. Nihil ipsum ut nam velit
+      corporis dolorum voluptate, cumque esse dicta maiores. Ex, commodi
+      quisquam?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste
+      facere cupiditate, sint perspiciatis voluptate. Nihil ipsum ut nam velit
+      corporis dolorum voluptate, cumque esse dicta maiores. Ex, commodi
+      quisquam?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt iste
+      facere cupiditate, sint perspiciatis voluptate. Nihil ipsum ut nam velit
+      corporis dolorum voluptate, cumque esse dicta maiores. Ex, commodi
+      quisquam?
+    </p>
+  </body>
+</html>
